@@ -22,7 +22,7 @@ uploadArea.addEventListener("drop", (e) => {
 });
 
 fileInput.addEventListener("change", (e) => {
-    const changedFile = e.target.files[0];
+    const changedFile = e.target.files;
     if(changedFile) processFile(changedFile);
 });
 
