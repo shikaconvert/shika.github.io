@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/exchange.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Shika</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>Shika Image Converter</h1>
+        <div class="upload-area" id="uploadArea">
+          <p>Drop your image here or click to upload</p>
+          <input type="file" id="fileInput" accept="image/*" style="display: none" multiple>
+        </div>
+        <div id="preivew-list" class="preivew-list">
+        </div>
+        <div class="controls">
+          <select id="formatSelect">
+            <option value="image/png">PNG</option>
+            <option value="image/jpeg">JPEG</option>
+            <option value="image/webp">WebP</option>
+          </select>
+          <button id="convertBtn" disabled>Convert & Download</button>
+        </div>
+        <p id="error" class="error" style="display: none"></p>
+      </div>
+    </div>
+
+    <footer>
+      Made with ❤️ by <a href="https://blackaly.github.io/">Ali Mashally</a> 
+    </footer>
+  </body>
+  <script type="module" src="logic.js"></script>
+</html>
